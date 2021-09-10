@@ -1,0 +1,20 @@
+replicaCount: 1
+containePort: 8080
+image:
+  repository: 484183570034.dkr.ecr.us-east-1.amazonaws.com/jenkins
+  pullPolicy: IfNotPresent  
+  tag: "latest"
+
+imagePullSecrets: []
+
+service:
+  type: LoadBalancer
+  port: 80
+
+volume:
+  name: jenkins-volume
+  mountPath: /var/jenkins_home
+  dockerVolumeName: dockersock
+  dockerVolumePath: /var/run/docker.sock
+
+storageClassName: aws-gp2
