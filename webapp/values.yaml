@@ -1,0 +1,12 @@
+
+replicaCount: 1
+containePort: 8080
+image:
+  repository: 484183570034.dkr.ecr.us-east-1.amazonaws.com/webapp
+  pullPolicy: IfNotPresent  
+  tag: "17"
+
+imagePullSecrets: []
+service:
+  type: LoadBalancer
+  port: 80
