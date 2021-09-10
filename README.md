@@ -44,6 +44,12 @@ Once we do it we get the output like below:
 ![image](https://user-images.githubusercontent.com/90410791/132858490-db1d26de-67d1-418c-be51-d59f929a9393.png)
 
 
+There is some difference between Jenkins and WebApp Charts. In Jenkins we are creating storage class and Persistent volume to store the state of Jenkins Server.
+
+![image](https://user-images.githubusercontent.com/90410791/132858870-e0398cdd-2da8-42b9-85f7-282d97abacdf.png)
+
+
+![image](https://user-images.githubusercontent.com/90410791/132858902-3a066022-b515-4c8c-b864-d8b6087a0139.png)
 
 
 
